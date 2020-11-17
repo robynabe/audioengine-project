@@ -1,1 +1,26 @@
+// CLASSES //
+.home-banner {
+  position: relative;
+  margin: 0 auto;
+}
+.background-banner {
+  background: rgba(255, 255, 255, 0.742);
+  position: absolute;
+  padding: 20px;
+  top: 20%;
+  left: 50%;
+  //transform: translate(-50%, -50%);
+}
 
+// ID's //
+#img-banner {
+  width: 100%;
+  height: auto;
+}
+#btn-shop-wireless {
+  background-color: #fc851e;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  color: #ffffff;
+}
