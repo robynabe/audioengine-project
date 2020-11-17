@@ -1,4 +1,13 @@
 header {
   color: white;
   background-color: black;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+// CLASSES //
+.nav-bar {
+  display: none;
 }
