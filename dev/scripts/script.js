@@ -6,8 +6,8 @@ btn.addEventListener("click", function () {
   body.classList.toggle("show");
 });
 
-/* $(document).ready(function () {
-		$(".home-banner").slick({
-			setting-name: setting-value
+/*$(document).ready(function () {
+		$('.home-banner').slick({
+			setting-name:setting-value
         });
-    }); */
+    });*/

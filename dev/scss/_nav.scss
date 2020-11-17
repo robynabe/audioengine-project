@@ -4,7 +4,6 @@ body {
 header {
   color: white;
   background-color: black;
-  padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -12,6 +11,7 @@ header {
 ul {
   list-style: none;
   line-height: 40px;
+  padding-left: 20px;
 }
 
 // CLASSES //
@@ -21,6 +21,25 @@ ul {
 .show header nav {
   display: block;
   width: 100%;
+}
+.logo-title {
+  padding: 15px;
+}
+.btn-menu {
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 35px;
+  position: absolute;
+  left: 90%;
+  top: 15px;
+}
+.nav-icons {
+  padding: 15px;
+}
+.nav-icons i {
+  margin: 5px;
+  margin-top: 0;
 }
 
 /*
