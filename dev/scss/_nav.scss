@@ -11,3 +11,20 @@ header {
 .nav-bar {
   display: none;
 }
+.show header nav {
+  display: block;
+  width: 100%;
+}
+
+.btn-menu.open > span:nth-child(2) {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+#hamburger.open > span:nth-child(1) {
+  transform: rotateZ(45deg);
+  top: 16px;
+}
+#hamburger.open > span:nth-child(2) {
+  transform: rotateZ(-45deg);
+  top: 16px;
+}
