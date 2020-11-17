@@ -1,3 +1,7 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
 header {
   color: white;
   background-color: black;
@@ -5,6 +9,11 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  line-height: 40px;
 }
 
 .nav-bar {
@@ -16,17 +25,16 @@ header {
   width: 100%;
 }
 
+/*
 .btn-menu.open > span:nth-child(2) {
   transform: translateX(-100%);
   opacity: 0;
 }
-
 #hamburger.open > span:nth-child(1) {
   transform: rotateZ(45deg);
   top: 16px;
 }
-
 #hamburger.open > span:nth-child(2) {
   transform: rotateZ(-45deg);
   top: 16px;
-}
+} */
