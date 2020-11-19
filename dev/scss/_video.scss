@@ -1,0 +1,33 @@
+i {
+  background-color: black; // be carefeul of hamburger menu conflict //
+  padding: 10px;
+  color: #ffffff;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+.social-contacts {
+  margin-left: 20px;
+}
+.far {
+  margin: 30px 5px 40px 20px;
+  background: none;
+  color: black;
+}
+
+#up-arrow,
+#top {
+  background: none;
+  color: $primary-color;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+.video img {
+  width: 100%;
+}
+#play {
+  background: none;
+  color: $primary-color;
+  font-size: 50px;
+}

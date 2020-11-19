@@ -21,7 +21,7 @@
 <header>
 
 	<div class="logo-title">
-		<img src="images/logo-audioengine.png" alt="audioengine logo">
+		<img id="logo-image" src="images/logo-audioengine.png" alt="audioengine logo">
 		<button class="btn-menu"><i class="fas fa-bars" id="hamburger"></i></button>
 	</div>
 
@@ -117,33 +117,38 @@
 		</div>
 	</section>
 
-	<!--These might need the <picture> syntax as the images crop in mobile view-->
-	<section class="all-new">
-		<img src="#0" alt="background image of silver speaker">
-		<div class="background-new">
+	<!--These might need the <picture> syntax as the images crop in mobile view USE SRCSET-->
+	<section class="featured-product">
+			<img class="responsive-image" 
+				src="images/bg-all-new-section.jpg" alt="background image of silver speaker"
+				srcset="images/bg-all-new-section-phone-square.jpg 1000w, 
+						images/bg-all-new-section.jpg 2000w" 
+				sizes="(max-width: 1400px) 100vw, 1400px">
+		<div class="featured-info">
 			<h2>ALL NEW</h2>
 			<p>The A5+ Wireless Speakers</p>
-			<button id="btn-all-new">LEARN MORE</button>
+			<button class="btn-featured">LEARN MORE</button>
 		</div>
 	</section>
 
 	<!--These might need the <picture> syntax as the images crop in mobile view-->
-	<section class="feeling-lucky">
-		<img src="#0" alt="background image of wooden speaker">
-		<div class="background-lucky">
+	<section class="featured-product">
+		<img class="responsive-image" src="images/bg-feeling-lucky-section-phone-square.jpg" alt="background image of wooden speaker">
+		<div class="featured-info">
 			<h2>FEELING LUCKY</h2>
 			<p>The A5+ Wireless Speakers</p>
-			<button id="btn-lucky">LEARN MORE</button>
+			<button class="btn-featured">LEARN MORE</button>
 		</div>
 	</section>
 
 	<!--These might need the <picture> syntax as the images crop in mobile view-->
 	<section class="our-story">
+		<img class="responsive-image" src="images/bg-our-story-section-phone-square.jpg" alt="background image of night sky">
 		<div class="our-story-content">
 			<h2>OUR STORY</h2>
-			<p>Audioengine was founded with a simple goal. Build a speaker that sounds great, is easy to set
-				up and use, and that makes people want to listen to music every day.
-			</p>
+			<p>Audioengine was founded with a simple goal.</p>
+			<p>Build a speaker that sounds great, is easy to set up and use, 
+				and that makes people want to listen to music every day.</p>
 			<button id="btn-story">LEARN MORE</button>
 		</div>
 	</section>
@@ -151,59 +156,70 @@
 	<!--slick by wheeler for side scroll-->
 	<!--logos go from single list to 5 icons across @1000px-->
 	<section class="in-the-news">
+		<h2>IN THE NEWS</h2>
 		<div class="magazines">
-			<img src="#0" alt="rolling stones logo">
-			<img src="#0" alt="mens health logo">
-			<img src="#0" alt="forbes life logo">
-			<img src="#0" alt="chiago tribune logo">
-			<img src="#0" alt="gear patrol logo">
+			<img class="magazine-logo" src="images/in-the-news-slider-01-rolling-stone.jpg" alt="rolling stones logo">
+			<img class="magazine-logo" src="images/in-the-news-slider-02-mens-health.jpg" alt="mens health logo">
+			<img class="magazine-logo" src="images/in-the-news-slider-03-forbes-life.jpg" alt="forbes life logo">
+			<img class="magazine-logo" src="images/in-the-news-slider-04-chicago-tribune.jpg" alt="chiago tribune logo">
+			<img class="magazine-logo" src="images/in-the-news-slider-05-gear-patrol.jpg" alt="gear patrol logo">
+			<img class="magazine-logo" src="images/in-the-news-slider-06-sound-guys.jpg" alt="sound guys logo">
+			<img class="magazine-logo" src="images/in-the-news-slider-07-wired.jpg" alt="wired logo">
+			<img class="magazine-logo" src="images/in-the-news-slider-08-cnet.jpg" alt="cnet logo">
+			<img class="magazine-logo" src="images/in-the-news-slider-09-gq.jpg" alt="gq logo">
+			<img class="magazine-logo" src="images/in-the-news-slider-10-pc-magazine.jpg" alt="pc magazine logo">
 		</div>
 	</section>
 
 	<!--giant orange play png??-->
 	<!--Once orange play is clicked, video pops up with a close btn top right-->
-	<section>
-		<video src="#0"></video>
-		<h1>THIS IS AUDIO ENGINE</h1>
-		<a href="#0"><i>*up arrow*</i>TOP</a>
-		<div class="social-contacts">
-			<i><!--facebook--></i>
-			<i><!--instagram--></i>
-			<i><!--pinterest--></i>
-			<i><!--youtube--></i>
-			<i><!--mail--></i>
-			<p>EMAIL SIGN UP</p>
+	<section class="video">
+		<div class="video-info">
+			<h1>THIS IS AUDIO ENGINE</h1>
+			<img src="images/bg-this-is-audio-engine-section.jpg" alt="audio engine video still">
+			<a href="#0" id="btn-play"><i class="fas fa-play" id="play"></i></a>
+			<video>
+				<source src="/media/this-is-audioengine.mp4" type="/media/mp4">
+			</video>
 		</div>
+		<a href="#0" id="top"><i class="fas fa-arrow-up" id="up-arrow"></i>TOP</a>
+		<div class="social-contacts">
+			<i class="fab fa-facebook-f"></i>
+			<i class="fab fa-instagram"></i>
+			<i class="fab fa-pinterest"></i>
+			<i class="fab fa-youtube"></i>
+		</div>
+			<i class="far fa-envelope" id=""></i><span>EMAIL SIGN UP</span>
 	</section>
 
 </main>
 
 <!--content goes form one long list to two lists then to four-->
 <footer>
-	<ul>
-		<li>Speakers</li>
-		<li>Components</li>
-		<li>Refurbished</li>
-		<li>Find A Store</li>
-	</ul>
-	<ul>
-		<li>Support</li>
-		<li>Explore</li>
-		<li>About</li>
-		<li>Contact</li>
-	</ul>
-	<ul>
-		<li>Press</li>
-		<li>Warranty</li>
-		<li>Military</li>
-		<li>Apps</li>
-	</ul>
-	<ul>
-		<li>Privacy</li>
-		<li>Terms</li>
-		<li>Legal</li>
-		<li>News</li>
-	</ul>
+		<ul>
+			<li>Speakers</li>
+			<li>Components</li>
+			<li>Refurbished</li>
+			<li>Find A Store</li>
+		</ul>
+		<ul>
+			<li>Support</li>
+			<li>Explore</li>
+			<li>About</li>
+			<li>Contact</li>
+		</ul>
+		<ul>
+			<li>Press</li>
+			<li>Warranty</li>
+			<li>Military</li>
+			<li>Apps</li>
+		</ul>
+		<ul>
+			<li>Privacy</li>
+			<li>Terms</li>
+			<li>Legal</li>
+			<li>News</li>
+		</ul>
 </footer>
 </div>
 
