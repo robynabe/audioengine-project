@@ -1,0 +1,13 @@
+.shop-device {
+  margin: 20px;
+}
+.room-device {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.round-images {
+  max-width: 150px;
+  height: auto;
+  border-radius: 75px;
+}
