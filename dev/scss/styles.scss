@@ -1,27 +1,7 @@
+@charset "utf-8";
+
 // Place your Sass imports here...
 @import "_variables.scss";
 @import "_nav.scss";
 @import "_banner.scss";
 @import "best-seller.scss";
-
-// Resets //
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-body {
-  margin: 0;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-}
