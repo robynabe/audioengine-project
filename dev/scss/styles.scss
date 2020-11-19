@@ -1,7 +1,9 @@
 @charset "utf-8";
 
 // Place your Sass imports here...
-@import "_variables.scss";
-@import "_nav.scss";
-@import "_banner.scss";
-@import "best-seller.scss";
+@import "variables";
+@import "reset";
+@import "banner";
+@import "nav";
+@import "best-seller";
+@import "typography";
