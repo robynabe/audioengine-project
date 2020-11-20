@@ -6,8 +6,34 @@ btn.addEventListener("click", function () {
   body.classList.toggle("show");
 });
 
-/*$(document).ready(function () {
-		$('.home-banner').slick({
-			setting-name:setting-value
-        });
-    });*/
+function showVideo(){
+  var popup = document.getElementById("vid-popup");
+  popup.classList.toggle("show")
+  if (popup.paused){ 
+      popup.play(); 
+  }
+  else { 
+    popup.pause();
+  }
+ 
+}
+
+$(document).ready(() => {
+		$('.home-banner .banner-slide-show').slick({
+      dots:true,
+      speed: 2000,
+      fade: true,
+    })
+});
+
+/*$(document).ready(() => {
+		$('.shop-device .room-device').slick({
+      mobileFirst:true,
+      breakpoint: 500 
+      settings: {
+      speed: 2000
+      }
+    })
+});*/
+
+

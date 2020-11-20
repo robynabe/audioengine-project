@@ -31,3 +31,11 @@ i {
   color: $primary-color;
   font-size: 50px;
 }
+
+#btn-play .show {
+  visibility: visible;
+  opacity: 1;
+}
+video {
+  width: 80%;
+}

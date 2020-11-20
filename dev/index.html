@@ -11,8 +11,8 @@
 	rel="stylesheet">
 	<!-- end Google Fonts -->
 	<script src="https://kit.fontawesome.com/b3d11e9eef.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="slick/slick.css" />
-	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
 	<link rel="stylesheet" href="styles/styles.css?cb=1">
 </head>
@@ -50,7 +50,29 @@
 	<!--Able to select one of the dots OR select either side chevron-->
 	<!--Mobile view only nav changes to hamburger drop down 100% width and pushed content down with it - menu changes to X-->
 	<section class="home-banner">
-		<img src="images/banner-01-speaker-black.jpg" id="img-banner"alt="background image of black speaker">
+		<div class="banner-slide-show">
+			<div>
+				<img src="images/banner-01-speaker-black.jpg" id="img-banner" alt="background image of black speaker">
+			</div>
+			<div>
+				<img src="images/banner-02-bluetooth-receiver.jpg" id="img-banner" alt="background image of black speaker">
+			</div>
+			<div>
+				<img src="images/banner-03-speaker-brown.jpg" id="img-banner" alt="background image of black speaker">
+			</div>
+			<div>
+				<img src="images/banner-04-speaker-brown.jpg" id="img-banner" alt="background image of black speaker">
+			</div>
+			<div>
+				<img src="images/banner-05-speaker-red.jpg" id="img-banner" alt="background image of black speaker">
+			</div>
+			<div>
+				<img src="images/banner-06-speaker-black.jpg" id="img-banner" alt="background image of black speaker">
+			</div>
+			<div>
+				<img src="images/banner-07-speaker-white.jpg" id="img-banner" alt="background image of black speaker">
+			</div>
+		</div>
 		<div class="background-banner">
 			<h1>SPOTIFY, PANDORA</h1>
 			<P>All your favourite music apps play instantly</P>
@@ -177,8 +199,8 @@
 		<div class="video-info">
 			<h1>THIS IS AUDIO ENGINE</h1>
 			<img src="images/bg-this-is-audio-engine-section.jpg" alt="audio engine video still">
-			<a href="#0" id="btn-play"><i class="fas fa-play" id="play"></i></a>
-			<video>
+			<a href="#0" id="btn-play" onclick="showVideo()"><i class="fas fa-play" id="play"></i></a>
+			<video controls="true" id="vid-popup">
 				<source src="/media/this-is-audioengine.mp4" type="/media/mp4">
 			</video>
 		</div>
@@ -230,6 +252,6 @@
 <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
 <script src="scripts/script.min.js?cb=1"></script>
 <!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->	
-<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>
