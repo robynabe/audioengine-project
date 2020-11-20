@@ -1,3 +1,8 @@
 .slick-slide img {
   width: 100%;
 }
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}

@@ -21,19 +21,25 @@ function showVideo(){
 $(document).ready(() => {
 		$('.home-banner .banner-slide-show').slick({
       dots:true,
+      infinite: true,
       speed: 2000,
       fade: true,
-    })
-});
+      arrows: true
+    }),
 
-/*$(document).ready(() => {
-		$('.shop-device .room-device').slick({
-      mobileFirst:true,
-      breakpoint: 500 
-      settings: {
-      speed: 2000
-      }
+    $('.shop-device .room-device').slick({
+      responsive: [{
+        breakpoint: 500,
+        settings: {
+          speed: 2000,
+          infinite:true,
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+
+      }]
     })
-});*/
+    
+});
 
 
