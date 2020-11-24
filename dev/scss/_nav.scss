@@ -1,14 +1,16 @@
 header {
   color: white;
   background-color: black;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 ul {
   list-style: none;
   line-height: 40px;
   padding-left: 20px;
+}
+
+nav li {
+  padding: 5px;
+  margin-right: 10px;
 }
 
 // CLASSES //
@@ -21,6 +23,8 @@ ul {
 }
 .logo-title {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 15px;
 }
 .btn-menu {
@@ -37,6 +41,11 @@ ul {
   margin-top: 0;
 }
 
+// ID's //
+#logo-image {
+  max-height: 34px;
+  align-self: center;
+}
 /*
 .btn-menu.open > span:nth-child(2) {
   transform: translateX(-100%);

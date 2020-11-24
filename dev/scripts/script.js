@@ -23,8 +23,7 @@ $(document).ready(() => {
       dots:true,
       infinite: true,
       speed: 2000,
-      fade: true,
-      arrows: true
+      fade: true
     }),
 
     $('.shop-device .room-device').slick({

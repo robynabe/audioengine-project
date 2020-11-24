@@ -1,0 +1,8 @@
+nav li:hover {
+  background: rgba(255, 254, 254, 0.242);
+}
+
+.fas:hover {
+  color: $primary-color;
+  transition: 150ms ease-in-out;
+}
