@@ -23,7 +23,10 @@ $(document).ready(() => {
       dots:true,
       infinite: true,
       speed: 2000,
-      fade: true
+      fade: true,
+      arrows: true,
+      prevArrow: '<div class="slick-prev"></div>',
+      nextArrow: '<div class="slick-next"></div>'
     }),
 
     $('.shop-device .room-device').slick({

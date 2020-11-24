@@ -2,16 +2,56 @@
 .best-sellers {
   margin: 20px;
 }
+.best-sellers h2 {
+  font-size: 3em;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
+  @media (min-width: $small-medium) {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 40px;
+  }
+}
+.best-sellers h3 {
+  font-size: 1.5em;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
+  margin-top: 30px;
+  @media (min-width: $small-medium) {
+    font-size: 1em;
+    order: 2;
+  }
+}
 .img-best-seller {
   max-width: 50%;
+  @media (min-width: $small-medium) {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    order: 1;
+  }
 }
 .btn-shop-now {
+  font-size: 1em;
   max-height: 40px;
   color: #ffffff;
   background-color: #fc851e;
   border: none;
   border-radius: 5px;
-  padding: 5px 15px;
+  padding: 12px 20px;
+  align-self: center;
+  @media (min-width: $small-medium) {
+    font-size: smaller;
+    order: 3;
+  }
+}
+.best-seller-items {
+  display: block;
+  @media (min-width: $small-medium) {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
 }
 
 // ID's //
@@ -20,4 +60,8 @@
 #seller-three {
   display: flex;
   justify-content: space-between;
+  @media (min-width: $small-medium) {
+    display: flex;
+    flex-direction: column;
+  }
 }

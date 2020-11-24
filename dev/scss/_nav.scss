@@ -1,11 +1,25 @@
 header {
   color: white;
   background-color: black;
+  @media (min-width: $large) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
-ul {
+nav {
+  display: none;
+  @media (min-width: $large) {
+    display: flex;
+  }
+}
+nav ul {
   list-style: none;
   line-height: 40px;
   padding-left: 20px;
+  @media (min-width: $large) {
+    display: flex;
+  }
 }
 
 nav li {
@@ -14,9 +28,6 @@ nav li {
 }
 
 // CLASSES //
-.nav-bar {
-  display: none;
-}
 .show header nav {
   display: block;
   width: 100%;
@@ -32,6 +43,9 @@ nav li {
   background-color: transparent;
   color: #ffffff;
   font-size: 35px;
+  @media (min-width: $large) {
+    display: none;
+  }
 }
 .nav-icons {
   padding: 15px;
@@ -39,6 +53,7 @@ nav li {
 .nav-icons i {
   margin: 5px;
   margin-top: 0;
+  max-height: 50px;
 }
 
 // ID's //

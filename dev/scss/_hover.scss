@@ -5,4 +5,16 @@ nav li:hover {
 .fas:hover {
   color: $primary-color;
   transition: 150ms ease-in-out;
+  cursor: pointer;
+}
+
+@media (min-width: $large) {
+  nav li:hover {
+    color: $primary-color;
+    transition: 150ms ease-in-out;
+    cursor: pointer;
+  }
+  nav li:hover {
+    background: none;
+  }
 }

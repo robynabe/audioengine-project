@@ -4,12 +4,30 @@
   margin: 0 auto;
 }
 .background-banner {
-  background: rgba(255, 255, 255, 0.742);
-  position: absolute;
-  padding: 20px;
-  top: 20%;
-  left: 50%;
-  //transform: translate(-50%, -50%);
+  display: none;
+  @media (min-width: $medium) {
+    background: rgba(255, 255, 255, 0.742);
+    position: absolute;
+    padding: 25px;
+    top: 8%;
+    left: 40%;
+    color: rgb(142, 142, 142);
+    font-size: 1.5em;
+    max-width: 400px;
+  }
+  @media (min-width: $medium-large) {
+    left: 52%;
+    font-size: 1.6em;
+    max-width: 500px;
+  }
+  @media (min-width: $large) {
+    font-size: 2.7em;
+    max-width: 600px;
+  }
+}
+
+.background-banner h1 {
+  margin-bottom: 0;
 }
 
 // ID's //
