@@ -27,9 +27,9 @@ $(document).ready(() => {
       arrows: true,
       prevArrow: '<div class="slick-prev"></div>',
       nextArrow: '<div class="slick-next"></div>'
-    }),
+    })
 
-    $('.shop-device .room-device').slick({
+    /*$('.shop-device .room-device').slick({
       responsive: [{
         breakpoint: 500,
         settings: {
@@ -40,7 +40,7 @@ $(document).ready(() => {
         }
 
       }]
-    })
+    }) */
     
 });
 

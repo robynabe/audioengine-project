@@ -1,13 +1,41 @@
 .shop-device {
   margin: 20px;
 }
+.shop-device h2 {
+  font-family: $primary-font;
+  font-weight: 200;
+  font-size: 3em;
+}
 .room-device {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .round-images {
-  max-width: 150px;
+  max-width: 180px;
   height: auto;
-  border-radius: 75px;
+  border-radius: 50%;
+}
+.device-category {
+  position: relative;
+  max-width: 50%;
+  height: auto;
+  border-radius: 50%;
+  margin: 10px;
+}
+.category-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.8em;
+  color: #ffffff;
+  text-align: center;
+}
+
+#play {
+  position: absolute;
 }

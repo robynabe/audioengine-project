@@ -15,6 +15,20 @@
   background: none;
   color: black;
 }
+.video-info {
+  position: relative;
+}
+.video-info h1 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-weight: 400;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+// ID's //
 
 #up-arrow,
 #top {
@@ -27,6 +41,7 @@
   width: 100%;
 }
 #play {
+  position: absolute;
   background: none;
   color: $primary-color;
   font-size: 50px;
@@ -37,5 +52,6 @@
   opacity: 1;
 }
 video {
+  display: none;
   width: 80%;
 }
