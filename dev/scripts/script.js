@@ -1,22 +1,34 @@
 // Write your JavaScript here...
 const body = document.body;
 const btn = document.querySelector(".btn-menu");
+let menuOpen = false
 
 btn.addEventListener("click", function () {
-  body.classList.toggle("show");
+    body.classList.toggle("show");
+});
+
+btn.addEventListener("click", function () {
+  if(!menuOpen){
+    btn.classList.add('open')
+    menuOpen = true
+  } else {
+    btn.classList.remove('open')
+    menuOpen = false
+  }
 });
 
 function showVideo(){
   var popup = document.getElementById("vid-popup");
   popup.classList.toggle("show")
-  if (popup.paused){ 
+  /*if (popup.paused){ 
       popup.play(); 
   }
   else { 
     popup.pause();
-  }
+  }*/
  
-}
+} 
+
 
 $(document).ready(() => {
 		$('.home-banner .banner-slide-show').slick({
@@ -29,19 +41,24 @@ $(document).ready(() => {
       nextArrow: '<div class="slick-next"></div>'
     })
 
-    /*$('.shop-device .room-device').slick({
-      responsive: [{
-        breakpoint: 500,
-        settings: {
-          speed: 2000,
-          infinite:true,
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
+    $('.shop-device .room-device').slick({
 
-      }]
-    }) */
+      unslick: true,
+      
+      responsive: [
+        { 
+          breakpoint: 450,
+          settings: {
+            unslick: false,
+            speed: 2000,
+            infinite:true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+
+          }
+        } 
+      ]
     
+    });
+
 });
-
-

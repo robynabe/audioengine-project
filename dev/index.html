@@ -22,7 +22,9 @@
 
 	<div class="logo-title">
 		<img id="logo-image" src="images/logo-audioengine.png" alt="audioengine logo">
-		<button class="btn-menu"><i class="fas fa-bars" id="hamburger"></i></button>
+		<div class="btn-menu">
+			<div class="hamburger"></div>
+		</div>
 	</div>
 	
 	<nav class="nav-bar">
@@ -206,10 +208,9 @@
 				<h1>THIS IS AUDIO ENGINE</h1>
 				<a href="#0" id="btn-play" onclick="showVideo()"><i class="fas fa-play" id="play"></i></a>
 			</div>
+			<div id="vid-popup"></div>
 			<img src="images/bg-this-is-audio-engine-section.jpg" alt="audio engine video still">
-			<video controls="true" id="vid-popup">
-				<source src="/media/this-is-audioengine.mp4" type="/media/mp4">
-			</video>
+			<iframe id="the-video" src="" type="video/mp4" frameborder="6px"></iframe>
 		</div>
 		<a href="#0" id="top"><i class="fas fa-arrow-up" id="up-arrow"></i>TOP</a>
 		<div class="social-contacts">

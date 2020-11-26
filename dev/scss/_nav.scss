@@ -17,6 +17,7 @@ nav ul {
   list-style: none;
   line-height: 40px;
   padding-left: 20px;
+  margin: 5px 0;
   @media (min-width: $large) {
     display: flex;
   }
@@ -25,6 +26,7 @@ nav ul {
 nav li {
   padding: 5px;
   margin-right: 10px;
+  font-size: 1.2em;
 }
 
 // CLASSES //
@@ -39,20 +41,57 @@ nav li {
   padding: 15px;
 }
 .btn-menu {
-  border: none;
-  background-color: transparent;
-  color: #ffffff;
-  font-size: 35px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  transition: all 0.5s ease-in-out;
   @media (min-width: $large) {
     display: none;
   }
 }
+.hamburger {
+  width: 30px;
+  height: 5px;
+  background: #ffffff;
+  border-radius: 5px;
+  transition: all 400ms ease-in-out;
+}
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  background: #ffffff;
+  border-radius: 5px;
+  transition: all 400ms ease-in-out;
+}
+.hamburger::before {
+  transform: translateY(-11px);
+}
+.hamburger::after {
+  transform: translateY(11px);
+}
+.btn-menu.open .hamburger {
+  transform: translateX(-30px);
+  background: transparent;
+}
+.btn-menu.open .hamburger::before {
+  transform: rotate(45deg) translate(25px, -25px);
+}
+.btn-menu.open .hamburger::after {
+  transform: rotate(-45deg) translate(25px, 25px);
+}
+
 .nav-icons {
   padding: 15px;
 }
 .nav-icons i {
   margin: 5px;
-  margin-top: 0;
+  margin-top: 6px;
   max-height: 50px;
 }
 
@@ -61,16 +100,3 @@ nav li {
   max-height: 34px;
   align-self: center;
 }
-/*
-.btn-menu.open > span:nth-child(2) {
-  transform: translateX(-100%);
-  opacity: 0;
-}
-#hamburger.open > span:nth-child(1) {
-  transform: rotateZ(45deg);
-  top: 16px;
-}
-#hamburger.open > span:nth-child(2) {
-  transform: rotateZ(-45deg);
-  top: 16px;
-} */
