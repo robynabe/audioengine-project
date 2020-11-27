@@ -140,31 +140,30 @@
 		</div>
 	</section>
 
-	<!--These might need the <picture> syntax as the images crop in mobile view USE SRCSET-->
 	<section class="featured-new">
 		<div class="featured-info">
 			<h2>ALL NEW</h2>
 			<p>The A5+ Wireless Speakers</p>
 			<button class="btn-featured">LEARN MORE</button>
 		</div>
-		<img class="responsive-image" 
-			src="images/bg-all-new-section-phone-square.jpg" alt="background image of silver speaker"
-			srcset="images/bg-all-new-section-phone-square.jpg 1000w, 
-					images/bg-all-new-section.jpg 2000w" 
-			sizes="(max-width: 1400px) 100vw, 1400px">
+		<picture>
+			<source media="(max-width: 500px)" srcset="images/bg-all-new-section-phone-square.jpg">
+			<img class="responsive-image" src="images/bg-all-new-section.jpg" alt="silver speaker">
+		</picture>
 	</section>
 
-	<!--These might need the <picture> syntax as the images crop in mobile view-->
 	<section class="featured-lucky">
 		<div class="featured-info">
 			<h2>FEELING LUCKY</h2>
 			<p>The A5+ Wireless Speakers</p>
 			<button class="btn-featured">LEARN MORE</button>
 		</div>
-		<img class="responsive-image" src="images/bg-feeling-lucky-section-phone-square.jpg" alt="background image of wooden speaker">
+		<picture>
+			<source media="(max-width: 500px)" srcset="images/bg-feeling-lucky-section-phone-square.jpg">
+			<img class="responsive-image" src="images/bg-feeling-lucky-section.jpg" alt="wooden speaker">
+		</picture>
 	</section>
 
-	<!--These might need the <picture> syntax as the images crop in mobile view-->
 	<section class="our-story">
 		<div class="our-story-content">
 			<h2>OUR STORY</h2>
@@ -173,7 +172,11 @@
 			and that makes people want to listen to music every day.</i></p>
 			<button id="btn-story">LEARN MORE</button>
 		</div>
-		<img class="responsive-image" src="images/bg-our-story-section-phone-square.jpg" alt="background image of night sky">
+		<picture>
+			<source media="(max-width: 500px)" srcset="images/bg-our-story-section-phone-square.jpg">
+			<source media="(max-width: 1000px)" srcset="images/bg-our-story-section-tablet.jpg">
+			<img class="responsive-image" src="images/bg-our-story-section.jpg" alt="night sky">
+		</picture>
 	</section>
 
 	<!--slick by wheeler for side scroll-->
