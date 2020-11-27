@@ -5,9 +5,10 @@ footer {
   justify-content: space-around;
   background-color: $footer-color;
   border-top: solid 1px black;
-  padding-top: 40px;
+  padding: 40px 10px;
 }
 footer ul {
-  margin: 0 50px;
+  margin: 0px 50px;
   list-style-type: none;
+  line-height: 30px;
 }

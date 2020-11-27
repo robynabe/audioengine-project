@@ -8,12 +8,27 @@
   border-radius: 25px;
 }
 .social-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   margin-left: 20px;
 }
-.far {
-  margin: 30px 5px 40px 20px;
-  background: none;
-  color: black;
+.far.fa-envelope {
+  margin: 30px 5px 30px 20px;
+  background: none !important;
+  color: black !important;
+  padding: 0;
+}
+.email {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.email p {
+  padding-bottom: 5px;
 }
 .video-info {
   position: relative;
