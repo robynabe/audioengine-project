@@ -18,7 +18,7 @@ btn.addEventListener("click", function () {
 });
 
 function showVideo(){
-  var popup = document.getElementById("vid-popup");
+  var popup = document.querySelector("video");
   popup.classList.toggle("show")
   /*if (popup.paused){ 
       popup.play(); 
@@ -51,14 +51,20 @@ $(document).ready(() => {
           settings: {
             unslick: false,
             speed: 2000,
-            infinite:true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
+            infinite:true
 
           }
         } 
       ]
     
     });
+
+    $('.in-the-news .magazines').slick({
+      infinite: true,
+      speed: 2000,
+      arrows: true,
+      prevArrow: '<div class="slick-prev"></div>',
+      nextArrow: '<div class="slick-next"></div>'
+    })
 
 });

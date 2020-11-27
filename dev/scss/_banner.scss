@@ -6,6 +6,7 @@
 .background-banner {
   display: none;
   @media (min-width: $medium) {
+    display: block;
     background: rgba(255, 255, 255, 0.742);
     position: absolute;
     padding: 25px;
