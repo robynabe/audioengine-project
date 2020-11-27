@@ -36,9 +36,7 @@ $(document).ready(() => {
       infinite: true,
       speed: 2000,
       fade: true,
-      arrows: true,
-      prevArrow: '<div class="slick-prev"></div>',
-      nextArrow: '<div class="slick-next"></div>'
+      arrows: true
     })
 
     $('.shop-device .room-device').slick({
@@ -51,7 +49,8 @@ $(document).ready(() => {
           settings: {
             unslick: false,
             speed: 2000,
-            infinite:true
+            infinite:true,
+            slidesToShow: 3
 
           }
         } 
@@ -62,9 +61,7 @@ $(document).ready(() => {
     $('.in-the-news .magazines').slick({
       infinite: true,
       speed: 2000,
-      arrows: true,
-      prevArrow: '<div class="slick-prev"></div>',
-      nextArrow: '<div class="slick-next"></div>'
+      arrows: true
     })
 
 });
