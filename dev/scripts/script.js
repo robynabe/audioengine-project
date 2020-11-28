@@ -17,17 +17,18 @@ btn.addEventListener("click", function () {
   }
 });
 
-function showVideo(){
-  var popup = document.querySelector("video");
-  popup.classList.toggle("show")
-  /*if (popup.paused){ 
-      popup.play(); 
-  }
-  else { 
-    popup.pause();
-  }*/
- 
+let myVideo = document.getElementById("the-video"); 
+function showVideo() { 
+  body.classList.toggle("show-video")
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
 } 
+
+function closeVideo(){
+  $body.removeClass('show-video');
+};
 
 
 $(document).ready(() => {
@@ -50,8 +51,6 @@ $(document).ready(() => {
             unslick: false,
             speed: 2000,
             infinite:true,
-            slidesToShow: 3
-
           }
         } 
       ]

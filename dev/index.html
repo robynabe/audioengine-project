@@ -179,8 +179,6 @@
 		</picture>
 	</section>
 
-	<!--slick by wheeler for side scroll-->
-	<!--logos go from single list to 5 icons across @1000px-->
 	<section class="in-the-news">
 		<h2>IN THE NEWS</h2>
 		<div class="magazines">
@@ -197,17 +195,17 @@
 		</div>
 	</section>
 
-	<!--giant orange play png??-->
-	<!--Once orange play is clicked, video pops up with a close btn top right-->
 	<section class="video">
 		<div class="video-info">
-			<div class="play-video">
-				<h1>THIS IS AUDIO ENGINE</h1>
-				<a href="#0" id="btn-play" onclick="showVideo()"><i class="fas fa-play" id="play"></i></a>
-			</div>
-			<div id="vid-popup"></div>
+			<h1>THIS IS AUDIO ENGINE</h1>
+			<a href="#0" id="btn-play" onclick="showVideo()"><i class="fas fa-play" id="play"></i></a>
 			<img src="images/bg-this-is-audio-engine-section.jpg" alt="audio engine video still">
-			<iframe id="the-video" src="this-isaudioengine.mp4" type="video/mp4" frameborder="6px" allowfullscreen></iframe>
+		</div>
+		<div class="video-container">
+			<button id="close-video">CLOSE</button>
+			<video id="the-video" controls>
+				<source src="media/this-is-audioengine.mp4" type="video/mp4">
+			</video>
 		</div>
 		<a href="#0" id="top"><i class="fas fa-arrow-up" id="up-arrow"></i>TOP</a>
 		<div class="social-contacts">
@@ -218,7 +216,7 @@
 				<i class="fab fa-youtube"></i>
 			</div>
 			<div class="email">
-				<i class="far fa-envelope" id=""></i>
+				<i class="far fa-envelope"></i>
 				<p>EMAIL SIGN UP</p>
 			</div>
 		</div>
@@ -226,7 +224,6 @@
 
 </main>
 
-<!--content goes form one long list to two lists then to four-->
 <footer>
 		<ul>
 			<li>Speakers</li>
