@@ -17,7 +17,17 @@ btn.addEventListener("click", function () {
   }
 });
 
-let myVideo = document.getElementById("the-video"); 
+const theVid = document.querySelector(".video-container")
+
+function showVideo(){
+  theVid.style.display = "block";
+};
+function closeVideo(){
+  alert("hi");
+}
+
+
+ /*let myVideo = document.getElementById("the-video"); 
 function showVideo() { 
   body.classList.toggle("show-video")
   if (myVideo.paused) 
@@ -26,9 +36,11 @@ function showVideo() {
     myVideo.pause(); 
 } 
 
+
 function closeVideo(){
-  $body.removeClass('show-video');
-};
+  let closeVid = document.getElementsByClassName('video-container')
+  closeVid.style.display = "none";
+}; */
 
 
 $(document).ready(() => {
