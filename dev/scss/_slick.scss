@@ -45,12 +45,11 @@
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  @media (min-width: $just-tiny) {
-    font-size: 40px;
-  }
 }
 #right-arrow-device,
-#left-arrow-device {
+#left-arrow-device,
+#right-arrow-news,
+#left-arrow-news {
   font-size: 40px;
   color: $primary-color;
   position: absolute;
@@ -58,7 +57,8 @@
   transform: translateY(-50%);
 }
 #right-arrow-device,
-#right-arrow-banner {
+#right-arrow-banner,
+#right-arrow-news {
   left: 90%;
   @media (min-width: $medium) {
     left: 94%;
@@ -68,6 +68,7 @@
   }
 }
 #left-arrow-banner,
-#left-arrow-device {
+#left-arrow-device,
+#left-arrow-news {
   left: 20px;
 }

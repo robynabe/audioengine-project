@@ -48,13 +48,14 @@ $(document).ready(() => {
       infinite:true,
       slidesToShow: 3,
       nextArrow: '#right-arrow-device',
-      prevArrow: '#left-arrow-device',
+      prevArrow: '#left-arrow-device'
     });
 
     $('.in-the-news .magazines').slick({
       infinite: true,
       speed: 2000,
-      arrows: true
+      nextArrow: '#right-arrow-device',
+      prevArrow: '#left-arrow-device'
     });
 
 });
