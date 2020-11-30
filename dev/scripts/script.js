@@ -18,17 +18,15 @@ btn.addEventListener("click", function () {
 });
 
 const theVid = document.querySelector(".video-container");
-const closeBtn = document.querySelector("#close-video");
+const closeBtn = document.querySelector("#btn-close");
 
 function showVideo(){
   theVid.style.display = "block";
 };
 
-/*
 closeBtn.addEventListener("click", function (){
   theVid.style.display = "none";
-})
-*/
+});
 
 
 

@@ -58,6 +58,10 @@ picture img {
   color: rgb(87, 87, 87);
 }
 
+.our-story {
+  position: relative;
+}
+
 .our-story-content {
   display: block;
   position: absolute;
@@ -77,9 +81,10 @@ picture img {
     left: 50%;
     transform: translateX(-50%);
     font-size: 1.5em;
+    margin-top: 40px;
   }
   @media (min-width: $extra-large) {
-    top: 15%;
+    top: 10%;
   }
 }
 .our-story-content h2 {
