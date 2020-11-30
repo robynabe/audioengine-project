@@ -3,31 +3,6 @@
   width: 100%;
 }
 
-.slick-next {
-  right: 25px;
-  z-index: 5;
-}
-.slick-prev {
-  left: 25px;
-  z-index: 5;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  font-family: "slick";
-  font-size: 20px;
-  line-height: 1;
-
-  opacity: 0.75;
-  color: $primary-color;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-#slick .arrow_next {
-  color: red;
-}
-
 .slick-dots {
   display: block;
   position: absolute;
@@ -35,7 +10,7 @@
 }
 .slick-dots li button:before {
   font-family: "slick";
-  font-size: 25px;
+  font-size: 18px;
   line-height: 20px;
 
   position: absolute;
@@ -50,6 +25,9 @@
 
   opacity: 0.25;
   color: $primary-color;
+  @media (min-width: $large) {
+    font-size: 20px;
+  }
 }
 
 .slick-dots li.slick-active button:before {

@@ -12,10 +12,10 @@
     position: absolute;
     padding: 25px;
     top: 8%;
-    left: 40%;
+    left: 45%;
     color: rgb(142, 142, 142);
     font-size: 1.5em;
-    max-width: 400px;
+    max-width: 500px;
   }
   @media (min-width: $medium-large) {
     left: 52%;
@@ -23,8 +23,42 @@
     max-width: 500px;
   }
   @media (min-width: $large) {
-    font-size: 2.7em;
+    font-size: 2.2em;
     max-width: 600px;
+  }
+  @media (min-width: $extra-large) {
+    left: 58%;
+  }
+}
+
+#right-arrow {
+  font-size: 30px;
+  color: $primary-color;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 90%;
+  cursor: pointer;
+  @media (min-width: $just-tiny) {
+    font-size: 40px;
+  }
+  @media (min-width: $medium) {
+    left: 94%;
+  }
+  @media (min-width: $extra-large) {
+    left: 96%;
+  }
+}
+
+#left-arrow {
+  font-size: 30px;
+  color: $primary-color;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  @media (min-width: $just-tiny) {
+    font-size: 40px;
   }
 }
 
@@ -36,7 +70,7 @@
 #btn-shop-wireless {
   background-color: $primary-color;
   border: none;
-  padding: 8px;
+  padding: 10px 12px;
   border-radius: 5px;
   color: #ffffff;
 }

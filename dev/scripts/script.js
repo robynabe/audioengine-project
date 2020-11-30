@@ -17,30 +17,19 @@ btn.addEventListener("click", function () {
   }
 });
 
-const theVid = document.querySelector(".video-container")
+const theVid = document.querySelector(".video-container");
+const closeBtn = document.querySelector("#close-video");
 
 function showVideo(){
   theVid.style.display = "block";
 };
-function closeVideo(){
-  alert("hi");
-}
 
+/*
+closeBtn.addEventListener("click", function (){
+  theVid.style.display = "none";
+})
+*/
 
- /*let myVideo = document.getElementById("the-video"); 
-function showVideo() { 
-  body.classList.toggle("show-video")
-  if (myVideo.paused) 
-    myVideo.play(); 
-  else 
-    myVideo.pause(); 
-} 
-
-
-function closeVideo(){
-  let closeVid = document.getElementsByClassName('video-container')
-  closeVid.style.display = "none";
-}; */
 
 
 $(document).ready(() => {
@@ -49,8 +38,9 @@ $(document).ready(() => {
       infinite: true,
       speed: 2000,
       fade: true,
-      arrows: true
-    })
+      nextArrow: '#right-arrow',
+      prevArrow: '#left-arrow'
+    });
 
     $('.shop-device .room-device').slick({
 
@@ -73,6 +63,6 @@ $(document).ready(() => {
       infinite: true,
       speed: 2000,
       arrows: true
-    })
+    });
 
 });
