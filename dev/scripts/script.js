@@ -38,25 +38,17 @@ $(document).ready(() => {
       infinite: true,
       speed: 2000,
       fade: true,
-      nextArrow: '#right-arrow',
-      prevArrow: '#left-arrow'
+      nextArrow: '#right-arrow-banner',
+      prevArrow: '#left-arrow-banner'
     });
 
     $('.shop-device .room-device').slick({
 
-      unslick: true,
-      
-      responsive: [
-        { 
-          breakpoint: 450,
-          settings: {
-            unslick: false,
-            speed: 2000,
-            infinite:true,
-          }
-        } 
-      ]
-    
+      speed: 2000,
+      infinite:true,
+      slidesToShow: 3,
+      nextArrow: '#right-arrow-device',
+      prevArrow: '#left-arrow-device',
     });
 
     $('.in-the-news .magazines').slick({

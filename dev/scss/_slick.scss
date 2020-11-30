@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
 }
-
+// DOTS //
 .slick-dots {
   display: block;
   position: absolute;
@@ -33,4 +33,41 @@
 .slick-dots li.slick-active button:before {
   opacity: 0.75;
   color: $primary-color;
+}
+
+// ARROWS //
+
+#right-arrow-banner,
+#left-arrow-banner {
+  font-size: 30px;
+  color: $primary-color;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  @media (min-width: $just-tiny) {
+    font-size: 40px;
+  }
+}
+#right-arrow-device,
+#left-arrow-device {
+  font-size: 40px;
+  color: $primary-color;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#right-arrow-device,
+#right-arrow-banner {
+  left: 90%;
+  @media (min-width: $medium) {
+    left: 94%;
+  }
+  @media (min-width: $extra-large) {
+    left: 96%;
+  }
+}
+#left-arrow-banner,
+#left-arrow-device {
+  left: 20px;
 }

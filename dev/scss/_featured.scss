@@ -7,7 +7,6 @@ picture img {
 .featured-lucky,
 .our-story {
   position: relative;
-  background: rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
 .featured-info h2 {
@@ -18,7 +17,7 @@ picture img {
 .featured-info {
   position: absolute;
   color: #ffffff;
-  padding: 25px;
+  padding: 30px;
   font-family: $primary-font;
   font-weight: 300;
   font-size: 1.5em;
@@ -26,48 +25,69 @@ picture img {
   width: 100%;
   height: 100%;
   @media (min-width: $small-medium) {
-    left: 50%;
-    top: 10px;
+    width: 500px;
+    height: auto;
+    left: 40%;
+    top: 30px;
     background: rgba(0, 0, 0, 0.5);
     padding: 30px;
-    margin-top: 50px;
-    max-width: 600px;
-    max-height: 220px;
+  }
+  @media (min-width: $medium) {
+    left: 55%;
+    top: 50px;
+  }
+  @media (min-width: $medium-large) {
+    top: 50%;
+    transform: translateY(-50%);
   }
   @media (min-width: $large) {
     left: 60%;
+    font-size: 1.9em;
+  }
+  @media (min-width: $extra-large) {
+    left: 70%;
+    font-size: 2em;
   }
 }
 .btn-featured {
   border: none;
   padding: 15px 20px;
   border-radius: 5px;
-  font-size: 0.8em;
+  font-size: 15px;
   font-weight: 100;
   color: rgb(87, 87, 87);
 }
 
 .our-story-content {
+  display: block;
   position: absolute;
-  width: 100%;
-  height: 100%;
   color: #ffffff;
   z-index: 2;
-  padding: 25px;
+  padding: 30px;
   font-family: $primary-font;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
   @media (min-width: $medium-medium) {
     background-color: transparent;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+  }
+  @media (min-width: $extra-large) {
+    top: 15%;
   }
 }
 .our-story-content h2 {
   font-style: normal;
   font-size: 2em;
+}
+.our-story-content p {
+  margin-bottom: 0;
 }
 
 #btn-story {
@@ -76,4 +96,5 @@ picture img {
   border: none;
   border-radius: 5px;
   padding: 10px 15px;
+  margin-top: 40px;
 }

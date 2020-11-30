@@ -38,37 +38,6 @@
   max-width: 400px;
 }
 
-#right-arrow {
-  font-size: 30px;
-  color: $primary-color;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 90%;
-  cursor: pointer;
-  @media (min-width: $just-tiny) {
-    font-size: 40px;
-  }
-  @media (min-width: $medium) {
-    left: 94%;
-  }
-  @media (min-width: $extra-large) {
-    left: 96%;
-  }
-}
-
-#left-arrow {
-  font-size: 30px;
-  color: $primary-color;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 20px;
-  @media (min-width: $just-tiny) {
-    font-size: 40px;
-  }
-}
-
 // ID's //
 #btn-shop-wireless {
   background-color: $primary-color;
