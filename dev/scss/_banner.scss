@@ -6,29 +6,36 @@
 }
 .background-banner {
   display: none;
+  background: rgba(255, 255, 255, 0.742);
+  position: absolute;
+  max-width: 600px;
+  padding: 25px;
+  color: rgb(120, 120, 120);
   @media (min-width: $medium) {
     display: block;
-    background: rgba(255, 255, 255, 0.742);
-    position: absolute;
-    padding: 25px;
     top: 8%;
     left: 45%;
-    color: rgb(142, 142, 142);
     font-size: 1.5em;
-    max-width: 500px;
   }
   @media (min-width: $medium-large) {
-    left: 52%;
+    left: 55%;
     font-size: 1.6em;
-    max-width: 500px;
   }
   @media (min-width: $large) {
+    padding-right: 40px;
     font-size: 2.2em;
-    max-width: 600px;
   }
   @media (min-width: $extra-large) {
     left: 58%;
   }
+}
+
+.background-banner h1 {
+  margin-bottom: 0;
+}
+.background-banner p {
+  font-weight: 300;
+  max-width: 400px;
 }
 
 #right-arrow {
@@ -62,10 +69,6 @@
   }
 }
 
-.background-banner h1 {
-  margin-bottom: 0;
-}
-
 // ID's //
 #btn-shop-wireless {
   background-color: $primary-color;
@@ -73,4 +76,7 @@
   padding: 10px 12px;
   border-radius: 5px;
   color: #ffffff;
+}
+#last-banner-info {
+  width: 600px;
 }
