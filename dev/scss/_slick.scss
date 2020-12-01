@@ -49,19 +49,27 @@
 }
 #right-arrow-device,
 #left-arrow-device {
-  font-size: 40px;
-  color: $primary-color;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  display: none;
+  @media (min-width: $just-tiny) {
+    display: block;
+    font-size: 40px;
+    color: $primary-color;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 #right-arrow-news,
 #left-arrow-news {
-  font-size: 40px;
-  color: $primary-color;
-  position: absolute;
-  top: 70%;
-  transform: translateY(-50%);
+  display: none;
+  @media (min-width: $small-medium) {
+    display: block;
+    font-size: 40px;
+    color: $primary-color;
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+  }
 }
 
 #right-arrow-banner {
