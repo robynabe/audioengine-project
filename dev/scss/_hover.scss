@@ -1,10 +1,25 @@
 nav li:hover {
   background: rgba(255, 254, 254, 0.242);
+  cursor: pointer;
 }
 
 .fas:hover {
   color: $primary-color;
   transition: 150ms ease-in-out;
+  cursor: pointer;
+}
+.btn-shop-wireless:hover,
+.btn-shop-now:hover,
+#btn-story:hover {
+  background-color: rgba(252, 136, 47, 0.5);
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+}
+
+.btn-featured:hover {
+  color: #ffffff;
+  background-color: $primary-color;
+  transition: all 250ms ease-in-out;
   cursor: pointer;
 }
 

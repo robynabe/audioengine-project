@@ -13,6 +13,7 @@
   justify-content: space-between;
   align-items: center;
   margin-left: 20px;
+  padding: 20px 50px;
 }
 .far.fa-envelope {
   margin: 30px 5px 30px 20px;
@@ -63,28 +64,20 @@
   position: relative;
 }
 
-.close-video {
-  position: absolute;
-  width: 78%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: red;
-}
-
 // ID's //
 #the-video {
   position: fixed;
-  border: solid #ffffff 20px;
+  border: solid #ffffff 15px;
   width: 75%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
+  max-width: 900px;
 }
 #btn-close {
   position: fixed;
-  top: 30%;
+  top: 35%;
   left: 82%;
   background-color: black;
   border: none;
@@ -92,13 +85,26 @@
   font-size: 0.7em;
   padding: 8px 10px;
   z-index: 101;
+  @media (min-width: $small-medium) {
+    top: 35%;
+  }
+  @media (min-width: $medium) {
+    top: 25%;
+  }
+  @media (min-width: $medium-large) {
+    top: 25%;
+  }
+  @media (min-width: $large) {
+    top: 15%;
+    left: 80%;
+  }
 }
 #up-arrow,
 #top {
   background: none;
   color: $primary-color;
   text-decoration: none;
-  margin-bottom: 30px;
+  margin: 30px 5px 30px 30px;
 }
 
 #play {
