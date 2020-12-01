@@ -5,6 +5,10 @@
   font-family: $primary-font;
   font-weight: 200;
   font-size: 3em;
+  @media (min-width: $just-tiny) {
+    font-size: 2em;
+    text-align: center;
+  }
 }
 .device-container {
   position: relative;
@@ -25,13 +29,14 @@
   border-radius: 50%;
   padding: 0;
   margin: 0 auto;
+  filter: brightness(50%);
   @media (min-width: $just-tiny) {
     width: 50%;
   }
 }
 .device-category {
   position: relative;
-  max-width: 50%;
+  max-width: 80%;
   height: auto;
   border-radius: 50%;
   margin: 10px 0;
@@ -46,6 +51,15 @@
   text-align: center;
   margin: 0;
   padding: 0;
+  @media (min-width: $just-tiny) {
+    font-size: 1.2em;
+  }
+  @media (min-width: $medium) {
+    font-size: 1.5em;
+  }
+  @media (min-width: $large) {
+    font-size: 1.9em;
+  }
 }
 
 #play {

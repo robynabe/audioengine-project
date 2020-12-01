@@ -63,9 +63,8 @@
   top: 70%;
   transform: translateY(-50%);
 }
-#right-arrow-device,
-#right-arrow-banner,
-#right-arrow-news {
+
+#right-arrow-banner {
   left: 90%;
   @media (min-width: $medium) {
     left: 94%;
@@ -74,8 +73,16 @@
     left: 96%;
   }
 }
-#left-arrow-banner,
+#right-arrow-device,
+#right-arrow-news {
+  left: 97%;
+}
+
+#left-arrow-banner {
+  left: 20px;
+}
+
 #left-arrow-device,
 #left-arrow-news {
-  left: 20px;
+  left: 0;
 }
