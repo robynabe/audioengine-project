@@ -50,6 +50,10 @@
   width: 100%;
   position: relative;
 }
+.video-pop-up {
+  display: none;
+  position: relative;
+}
 .video-background {
   position: fixed;
   top: 0;
@@ -60,13 +64,19 @@
   z-index: 99;
 }
 .video-container {
-  display: none;
   position: relative;
+  width: 75%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  max-width: 900px;
+  margin: auto;
 }
 
 // ID's //
 #the-video {
-  position: fixed;
+  position: absolute;
   border: solid #ffffff 15px;
   width: 75%;
   top: 50%;
@@ -76,7 +86,7 @@
   max-width: 900px;
 }
 #btn-close {
-  position: fixed;
+  position: absolute;
   top: 35%;
   left: 82%;
   background-color: black;
@@ -89,13 +99,17 @@
     top: 35%;
   }
   @media (min-width: $medium) {
-    top: 25%;
+    top: 27%;
   }
   @media (min-width: $medium-large) {
     top: 25%;
   }
   @media (min-width: $large) {
-    top: 15%;
+    top: 20%;
+    left: 82%;
+  }
+  @media (min-width: $extra-large) {
+    top: 16%;
     left: 80%;
   }
 }

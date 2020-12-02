@@ -17,7 +17,7 @@ btn.addEventListener("click", function () {
   }
 });
 
-const theVid = document.querySelector(".video-container");
+const theVid = document.querySelector(".video-pop-up");
 const closeBtn = document.querySelector("#btn-close");
 
 function showVideo(){

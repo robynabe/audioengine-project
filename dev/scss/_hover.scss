@@ -16,7 +16,8 @@ nav li:hover {
   cursor: pointer;
 }
 
-.btn-featured:hover {
+.btn-featured:hover,
+#btn-close:hover {
   color: #ffffff;
   background-color: $primary-color;
   transition: all 250ms ease-in-out;
